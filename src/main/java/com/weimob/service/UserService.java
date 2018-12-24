@@ -6,9 +6,7 @@ public interface UserService {
 
     int deleteByPrimaryKey(byte[] id);
 
-    Users selectByPrimaryKey(byte[] id);
+    int insert(Users record);
 
-    int updateByPrimaryKey(Users record);
-
-
+    int insertSelective(Users record);
 }
